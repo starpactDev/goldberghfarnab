@@ -1,0 +1,29 @@
+.App {
+    text-align: center;
+}
+
+body {
+  background: #f2f2f2;
+  color: #383838;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  #e99802 ;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(52, 52, 53);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #e99802;
+    border-radius: 20px;
+    border: 3px solid rgb(52, 52, 53);
+  }

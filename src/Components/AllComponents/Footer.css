@@ -1,0 +1,8 @@
+.icon-grow{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.icon-grow:hover {
+    transform: scale(1.2);
+}
