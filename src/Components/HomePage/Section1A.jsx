@@ -7,10 +7,15 @@ import { Grid3x3Outlined } from '@mui/icons-material';
 function Section1A() {
     const colors = ["#845ec2", "#d65db1", "#ff6f91", "#ff9671", "#ffc75f", "#f9f871"];
     const [color, setColor] = useState("");
+    const [colorCounter, setColorCounter] = useState(0);
+    
 
     useEffect(() => {
+        let c = 0;
         setInterval(async () => {
             let c = await Math.floor(Math.random() * colors.length)
+            // setColorCounter(prev =>  prev+1)
+            
             setColor(colors[c])
 
         }, 6000)
@@ -30,7 +35,7 @@ function Section1A() {
 
                             </Typography>
                         </Grid> */}
-                            <Grid item sm={5} xs={4} sx={{ textAlign: "right" }}>
+                            <Grid item sm={6} xs={4} sx={{ textAlign: "right" }}>
                                 <Typography variant='h3' component="span" color={color}>
                                     <Typed
                                         strings={["The Cash Flow", "The Funding", "The Checking"]}
@@ -43,7 +48,7 @@ function Section1A() {
                                     />
                                 </Typography>
                             </Grid>
-                            <Grid item sm={7} xs={4} sx={{ textAlign: "left" }}>
+                            <Grid item sm={6} xs={4} sx={{ textAlign: "left" }}>
                                 <Typography variant='h3' component="span">
                                     &nbsp; tools you need
                                 </Typography>

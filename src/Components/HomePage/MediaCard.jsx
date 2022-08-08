@@ -20,10 +20,11 @@ function MediaCard(props) {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Lorem Ipsum
+                        {props.title1? props.title1: "Lorem Ipsum"} 
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus laboriosam voluptatibus minima libero pariatur 
+                    {props.text? props.text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus laboriosam voluptatibus minima libero pariatur "}
+                        
                     </Typography>
                 </CardContent>
                 <CardActions>

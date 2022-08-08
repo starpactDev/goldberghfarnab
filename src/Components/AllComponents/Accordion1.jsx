@@ -11,7 +11,7 @@ function Accordion1({ QnA }) {
       {
         QnA.map((item, key) => {
           return(
-          <Accordion sx={{ backgroundColor: "#F2F2F2" }}>
+          <Accordion sx={{ backgroundColor: "#F2F2F2", textAlign: "left" }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"

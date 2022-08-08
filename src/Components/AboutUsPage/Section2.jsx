@@ -9,7 +9,7 @@ function Section2() {
                 <Paper elevation={4} sx = {{ backgroundImage: "linear-gradient(to right top, #700d74, #8c3593, #a855b2, #c575d3, #e396f4)" }}>
                     <Grid container >
                         <Grid item md = { 8 } xs = { 12 } sx = {{ py : 8, px:8, textAlign: "left" }}>
-                            <Typography variant = "h4" color="#ffffff">
+                            <Typography variant = "h5" color="#ffffff">
                                 Let’s get your business the capital it needs, to-day!
                             </Typography>
                         </Grid>
